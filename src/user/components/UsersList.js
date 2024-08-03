@@ -10,7 +10,7 @@ const UsersList = ({ items }) => {
     }
 
     return (
-        <ul>
+        <ul className='users-list'>
             {items.map(({ id, image, name, places }) => {
                 return <UserItem key={id} id={id} image={image} name={name} placeCount={places} />;
             })}
